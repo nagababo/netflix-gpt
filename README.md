@@ -7,7 +7,11 @@
 -Login Form
 -Sign Up Form
 -Form Validation
-
+-firebase setup 
+-firebase production deploy(https://netflix-gpt-5b1cf.web.app)
+-create signup user account
+-implemnt sign is user api
+- created redux store with userSlice
 
 # Features
 
