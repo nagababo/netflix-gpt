@@ -35,7 +35,7 @@ const Login = () => {
           console.log(auth,"auth")
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-             photoURL: null
+             photoURL: USER_AVATAR
           }).then(() => {
             const { uid, email, displayName, photoURL } = auth.currentUser;
             debugger;

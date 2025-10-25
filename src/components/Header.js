@@ -3,7 +3,7 @@ import { auth } from "../utils/firebase"
 import { signOut } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { LOGO_URL } from "../utils/constants"
+import { LOGO_URL, USER_AVATAR } from "../utils/constants"
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { addUser, removeUser } from "../utils/userSlice"
 
@@ -52,9 +52,12 @@ const Header = () => {
           src={LOGO_URL}
         />
         {user &&
-
-          <div className='py-2'>
-            <button className='p-y-2  text-white' onClick={handleSignOut}>Sign Out</button>
+          <div className='flex items-center space-x-2'>
+            <img alt='logo'
+              className='w-5 h-5'
+              src={USER_AVATAR}
+            />
+            <button className=' text-white' onClick={handleSignOut}>Sign Out</button>
           </div>
         }
       </div>
