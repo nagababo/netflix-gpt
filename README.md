@@ -12,6 +12,8 @@
 -create signup user account
 -implemnt sign is user api
 - created redux store with userSlice
+-implement sign out
+-update profile
 
 # Features
 
